@@ -1,0 +1,52 @@
+/*while this comment will go through to css*/
+ul {
+  color: red; }
+  ul li {
+    font-size: 16px; }
+    ul li a {
+      font-weight: bold; }
+
+a {
+  color: blue;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.ordered {
+  color: red; }
+  .ordered .list2 {
+    background: orange; }
+
+h1 {
+  border: 3px ridge #ccc; }
+
+html {
+  font-size: 75%; }
+
+.title-look2, .title-layout2 {
+  border: 10px solid gray;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.title-layout2 {
+  border-color: green; }
+
+.title-layout {
+  border: 10px solid gray;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.title-layout {
+  border-color: green; }
+
+.title-layout3 {
+  border: 10px solid blue;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+.list4 {
+  border: 10px solid gray;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5); }
+
+/*# sourceMappingURL=style.css.map */

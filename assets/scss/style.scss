@@ -1,0 +1,77 @@
+//notes for the developer, will not go through to css
+/*while this comment will go through to css*/
+ul {
+  color: red;
+    li {
+      font-size: 16px;
+      a {
+        font-weight: bold;
+      }
+    }
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.ordered {
+  color: red;
+  .list2 {
+    background: orange;
+  }
+}
+$border-color: #ccc;
+
+h1 {
+  border: 3px ridge $border-color;
+}
+html {
+  font-size: (12 / 16) * 100%;
+}
+
+// Our reusable variables
+$standard-border-color: gray;
+$winning-border-color: green;
+
+// Our reusable default presentational class
+.title-look2 {
+  border: 10px solid $standard-border-color;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+// Semantic class used in the DOM
+.title-layout2 {
+  @extend .title-look2;
+  border-color: $winning-border-color;
+}
+// Our reusable variables
+$standard-border-color: gray;
+$winning-border-color: green;
+
+// Our reusable default presentational class
+%title-look1 {
+  border: 10px solid $standard-border-color;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+// Semantic class used in the DOM
+.title-layout {
+  @extend %title-look1;
+  border-color: $winning-border-color;
+}
+
+@mixin title-look3($border-color: gray) {
+  border: 10px solid $border-color;
+  padding: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.title-layout3 {
+  @include title-look3(blue);
+}
+.list4 {
+  @include title-look3;
+}
